@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bg)"/>
+  <!-- Magnifying glass -->
+  <circle cx="28" cy="28" r="12" fill="none" stroke="white" stroke-width="4"/>
+  <line x1="37" y1="37" x2="48" y2="48" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <!-- Spark/precision dot -->
+  <circle cx="28" cy="28" r="4" fill="white" opacity="0.9"/>
+  <!-- Small accent -->
+  <circle cx="46" cy="18" r="3" fill="white" opacity="0.6"/>
+</svg>
