@@ -51,6 +51,7 @@ const rememberSettings = ref(false)
 const copied = ref(false)
 
 // ========== 配置 ==========
+const baseUrl = import.meta.env.BASE_URL
 const availableLocales = ['zh-CN', 'zh-TW', 'en', 'es', 'ko', 'ja']
 
 const fileTypes = [
@@ -555,7 +556,7 @@ onUnmounted(() => {
     <header class="header">
       <div class="header-inner">
         <div class="logo">
-          <img src="/favicon.svg" alt="ByteAB" class="logo-img" />
+          <img :src="`${baseUrl}favicon.svg`" alt="ByteAB" class="logo-img" />
           <span class="logo-name">ByteAB</span>
         </div>
         <select class="lang-sel" :value="locale" @change="changeLocale($event.target.value)">
